@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thibault Sellam's homepage</title>
+  <link rel="stylesheet" href="template-styles.css">
+    <style type="text/css">
+        div.general_info {
+            width: 100%;
+            overflow:auto;
+            margin-bottom: 1em;
+        }
+        div.table_cat {
+            width:50%;
+            float:left;
+        }
+        div.photo {
+            /*width: 20%;*/
+            float: right;
+        }
+        .table_cat td {
+            vertical-align: top;
+        }
+        /*.photo img{
+            width: 100%;
+            max-width:14em;
+        }*/
+
+        h2 {
+        clear: left;
+        }
+
+        div.two-cols {
+            clear: left;
+        }
+
+        .left-img{
+            float:left;
+            margin-right: 2em;
+        }
+
+        .big-image img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul.biblio li {
+            margin-bottom:0.5em;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header-heading">Thibault Sellam</h1>
+        </div>
+    </div>
+
+
+
+    <div class="content">
+
+    <div class="general_info">
+
+        <div class="table_cat">
+
+	<table class="table table-striped">
+
+            <tr>
+                <td>
+                    <a href="mailto:thibault.sellam@gmail.com" style="height:18px;border:0;margin-right:8px; color: black; font-size:17pt;text-decoration: none;"><b>email</b></a>
+                	<a href="http://github.com/tsellam"><img src="GitHub_Logo.png" alt="GitHub" style="height:18px;border:0;margin-right:8px;margin-top: 4px;"></a>
+                	<a href="https://bitbucket.org/tsellam/"><img src="bitbucket_Logo.png" alt="Bitbuket" style="height:18px;border:0;margin-top: 4px;"></a>
+                </td>
+            </tr>
+                        <tr>
+                <td></td>
+            </tr>
+          <!--  <tr>
+                <td><b>CV</b></td>
+                <td><a href="ThibaultSellam-CV.pdf">Here</a></td>
+            </tr> -->
+        </table>
+
+	    <p>
+	    I am a postdoc at the <a href="http://datascience.columbia.edu/">Data Science Institute</a> at <a href="http://www.columbia.edu/">Columbia University</a>, in New York. Previously,
+	    I was a PhD student in the Database Group of CWI and the University of Amsterdam, in the Netherlands. I am interested in databases, machine learning, visualization, and how they work together.
+	    <!--Recently, I
+	    have worked on the following topics:
+	    <ul>
+	        <li> Interactive data exploration
+	        <li> Query recommendation
+	        <li> Subspace search, feature selection
+	        <li> Clustering
+	        <li> Social data mining
+	    </ul>-->
+	    </p>
+	    </div>
+
+        <div class="photo">
+            <img src="USphoto.jpg" alt="Portrait" width="180">
+        </div>
+    </div>
+
+
+    <div class="main">
+
+
+
+    <h2>PhD project: Automatic Advisors for Data Exploration</h2>
+
+
+<!--    Imagine for instance Annie, an journalist with great
+    curiosity, intermediate data analysis literacy and little time.  Annie was
+    granted access to a fantastic database, providing hundreds of economic
+    indicators, describing every government to date in her country. She knows
+    that somewhere in this data lies the topic of her next article, but she does
+    not where to start.  How can we help her? -->
+
+ <div class="two-cols">
+
+        <p class="left-img">
+        <a href="https://pure.uva.nl/ws/files/2813208/177374_Sellam_thesis_complete.pdf">
+        	<img src="cover_small.jpg" width="200">
+    	</a>
+        <p>
+        The aim of my PhD was to develop <b>automatic advisors</b>, to help
+        users <b>explore</b> and understand their databases.  These advisors
+        could detect statistical patterns, and exploit them to recommend SQL
+        queries and visualizations. For instance, <a
+            href='CIKM2015.pdf'>Claude [CIKM 2015]</a> uses <b>feature
+            selection</b> and elements of information theory to
+        recommend OLAP views. <a href="MeetCharles -
+            CIDR2013.pdf">Charles [CIDR 2015]</a>, then its
+        successor <a href="tkde2015.pdf">Blaeu [TKDE 2015]</a> exploit <b>cluster analysis</b> and
+        <b>subspace search</b>. Also, instead of a well-structured
+        database, we may have to deal with text files, or even
+        worse, tweets. <a
+            href="ICWE2015.pdf">Raimond [ICWE 2015]</a>, can
+        <b>extract quantitative data</b> from these sources, with a focus on
+        event reports.
+        </p>
+
+        <p> You may access the <b>full book</b> <a href="http://dare.uva.nl/search?metis.record.id=542742">here</a>.
+
+    </div>
+
+    <div class="two-cols">
+
+        <p class="left-img" style="text-align: right;"> <img src="Rlogo.png" width="35"> </p>
+        <p> Some of the the ideas in the thesis were implemented in a <b>R package</b> called <a href="http://github.com/tsellam/findviews">findviews</a>, available on CRAN. Check it out!</p>
+
+    </div>
+
+
+
+
+    <h2>Other Projects</h2>
+    <p>
+    Here are a few other projects I am involved in:
+
+    <div class="two-cols">
+
+        <p class="left-img"> <img src="ProjectSocial.png" width="100"> </p>
+        <p><b>Social data analysis</b>: we mine query logs and social data. This
+        project has been ongoing since my internship at Microsoft Research,
+        during summer of 2014 in Mountain View (CA). Then, I was under
+        supervised by Omar Alonso. </p>
+
+    </div>
+
+    <div class="two-cols">
+
+        <p class="left-img"> <img src="ProjectGPS.png" width="100"> </p>
+        <p><b>TimeTrails, Spatiotemporal data warehouses for trajectory
+            exploitation</b>: we develop database technology to mine large
+            volumns of GPS data.  This project is collaboration with TomTom,
+            funded by the Dutch organization <a
+            href=http://www.commit-nl.nl/>COMMIT</a>. </p>
+
+    </div>
+
+    <div class="two-cols">
+
+        <p class="left-img"> <img src="ProjectMonet.png" width="100"> </p>
+        <p><b> <a href="http://monetdb.org/">MonetDB</a></b>: MonetDB is a very
+        fast Open Source column-store.  </p>
+
+    </div>
+    </p>
+
+    <h2>Other, other projects</h2>
+
+    <p>
+    <ul>
+        <li> Before I started my PhD, I had a technology role at <a
+        href="http://www.jpmorgan.com/pages/jpmorgan">JPMorgan</a> (investment
+        banking) for a year.
+        <li> I wrote my Master's thesis in the
+        <a href="http://www.it.uu.se/research/group/udbl"> database group</a> of
+        Uppsala University, in Sweden. I developed a Naive Bayes classifier for a
+        DBMS, and used it on a stream of Twitter messages to detect emotions. You may
+        find the text <a href="ThibaultSellamMSc.pdf">here</a>.
+        <li> Between January and September 2015, I toured with a music band. We
+        achieved a lot, I will happily share tour stories upon request.
+    </ul>
+    </p>
+
+
+    <h2>Publications</h2>
+
+    <p>
+    <h3>In the pipeline</h3>
+    <ul class="biblio">
+        <li><em>Thibault Sellam, Martin Kersten</em>:<br/>
+        <b>80 New Packages to Mine Database Query Logs</b>,
+        manuscript for a vision paper [<a href="80NewPackages.pdf">pdf</a>]
+
+    </ul>
+    </p>
+
+
+    <p>
+    <h3>Accepted or Published</h3>
+    <ul class="biblio">
+        <li><em>Thibault Sellam, Martin Kersten</em>:<br/>
+        <b>Fast, Explainable View Detection to Characterize Exploration Queries</b>,
+        SSDBM 2016 [<a href="SSDBM2016.pdf">pdf</a>]
+
+        <li><em>Thibault Sellam, Martin Kersten</em>:<br/>
+        <b>Have a Chat with Clustine, Conversational Engine to Query Large Tables</b>,
+        HILDA@SIGMOD 2016 [<a href="Clustine-hilda.pdf">pdf</a>]
+
+        <li><em>Thibault Sellam, Martin Kersten</em>:<br/>
+        <b>Ziggy: Characterizing Query Results for Data Explorers</b>,
+        VLDB 2016 (Demo Track) [<a href="Ziggy-demo.pdf">pdf</a>]
+
+        <li><em>Thibault Sellam, Robin Cijvat, Richard Koopmanschap, Martin Kersten</em>:<br/>
+        <b>Blaeu: Mapping and Navigating Large Tables with Cluster Analysis</b>,
+        VLDB 2016 (Demo Track) [<a href="Blaeu-demo.pdf">pdf</a>]
+
+        <li><em>Thibault Sellam, Martin Hentschel, Vasilis Kandylas, Omar
+            Alonso</em>:<br/>
+        <b>e#: Sharper Expertise Detection from Microblogs</b>, EDBT
+        (Industry Paper) 2016
+
+        <li><em>Thibault Sellam, Emmanuel M&uuml;ller, Martin Kersten</em>:<br/>
+        <b>Semi-Automated Exploration of Data Warehouses</b>,
+        ACM CIKM 2015 (KM track)
+        [<a href="CIKM2015.pdf">pdf</a>]
+
+        <li><em>Thibault Sellam, Martin Kersten</em>:<br/>
+        <b>Cluster-Driven Navigation of the Query Space</b>,
+        IEEE TKDE 2015
+        [<a href="tkde2015.pdf">pdf</a>, <a href="blaeu.html">additional
+            material</a>]
+
+        <li><em>Thibault Sellam, Omar Alonso</em>:<br/>
+        <b>Raimond: Quantitative Data Extraction from Twitter to Describe Events</b>,
+        ICWE 2015
+        [<a href="ICWE2015.pdf">pdf</a>]
+
+        <li><em>Thibault Sellam, Martin Kersten</em>:<br/>
+        <b>Meet Charles, Big Data Query Advisor</b>,
+        CIDR 2013
+        [<a href="MeetCharles - CIDR2013.pdf">pdf</a>,
+        <a href="CIDR-Poster.pdf">poster</a>]
+
+        <li><em>Thibault Sellam</em>:<br/>
+        <b>Fast Cartography for Data Explorers</b>,
+        PhD workshop@VLDB 2013
+        [<a href="PhDworkshop.pdf">pdf</a>]
+
+        <li><em>Holger Pirk, Thibault Sellam, Stefan Manegold, Martin Kersten</em>:<br/>
+        <b>X-device query processing by bitwise distribution</b>,
+        DaMoN@SIGMOD 2012
+        [<a href="XDevice processing - damon2012.pdf">pdf</a>,
+        <a href="Damon-Poster.pdf">poster</a>]
+
+        <li><em>Konrad B&ouml;sche, Thibault Sellam, Holger Pirk, Ren&eacute; Beier, Peter
+        Mieth, Stefan Manegold</em>:<br/>
+        <b>Scalable Generation of Synthetic GPS Traces with Real-Life Data Characteristics</b>,
+        TPCTC@VLDB 2012
+        [<a href="GeneratingGPS - tpctc2012.pdf">pdf</a>}
+
+    </ul>
+    </p>
+
+    <p>
+    <h3>Patents</h3>
+        Two US patents on methods to mine social data, with Omar Alonso
+    (Microsoft). The first one is public: <em>Extraction of Quantitative Data from Online Content, US 20160203225</em>. The second one is pending.
+    </p>
+
+    </div>
+
+</div>
+
+
+
+<!--
+<h2>In the Pipeline</h2>
+<ul>
+   <li><em>Thibault Sellam, Martin Kersten</em>:<br/>
+    <b>Maps to Navigate the Query Space</b>,
+    Under review for IEEE Transactions on Data and Knowledge Engineering, TKDE, 2015
+
+    <li>
+
+</ul>
+-->
+
+
+
+<div class="footer">
+<SMALL>
+<EM>
+<A href="http://www.cwi.nl/disclaimer.html"> CWI DISCLAIMER</A>
+</EM>
+</SMALL>
+<div>
+
+
+
+</body>
+
+
+</html>
